@@ -1,0 +1,266 @@
+body,html{
+    margin: 0 !important;
+    padding: 0px !important;
+    background-color: white;
+
+}
+.title{
+    padding:0px !important;
+    margin:0 !important;
+    padding-top:45px;
+    width:100% !important;
+    height: 1260px;
+    background-color: rgba(242, 242, 242, 0.761);
+    -webkit-box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.19);
+    -moz-box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.19);
+    box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.19);
+    /* background-color: rgba(188, 55, 55, 0.877); */
+}
+.container-fluid{
+    padding:0px !important;
+    height: 1060px;
+    position:relative;
+}
+.hi{
+    padding-top:30px;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color:rgba(57, 63, 70, 0.6);
+
+}
+.reparacion{
+    padding-top:15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.service{
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color:#393F46;
+    padding-top: 30px;
+    width:40%;
+    margin-left:30%;
+}
+.ssn{
+    padding-top:6px;
+    padding-bottom: 6px;
+    margin-left:60px;
+}
+.labeli{
+    padding-left: 8px;
+}
+.row{
+    max-width:100% !important;
+}
+.form-group{
+    padding:0px !important;
+    margin:4px !important;
+}
+/** Hiding spin buttons */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+input[type=radio] {
+    display:inline !important;
+}
+
+.rowi2{
+    width:100% !important;
+}
+p>.labeli{
+    margin:4px !important;
+
+}
+textarea{
+    resize:none !important;
+}
+.sendi{
+    margin-top:50px;
+}
+.planes{
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    font-weight: 700;
+    padding-top: 60px;
+    font-size:26px;
+    padding-bottom: 20px;
+
+}
+.col3{
+    position:relative;
+
+    height: 420px;
+    width:280px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-left:50%;
+    transform: translateX(-45%);
+    -webkit-box-shadow: 0px 8px 20px rgba(57, 63, 70, 0.25);
+    -moz-box-shadow: 0px 8px 20px rgba(57, 63, 70, 0.25);
+    box-shadow: 0px 8px 20px rgba(57, 63, 70, 0.25);
+}
+.cursos{
+    position:absolute;
+    width:32px;
+    top:12px;
+    left:12px;
+}
+.headin{
+    position:absolute;
+    font-family: 'Roboto', sans-serif;
+    top:54px;
+    left:12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+}
+.price{
+    position:absolute;
+    top: 95px;
+    left:12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+.spani{
+    font-size: 12px;
+}
+.caracteristicas{
+    position:relative;
+    top:130px;
+    left:12px;
+}
+/** Li custom bullets */
+li.has {
+    list-style-image: url('./img/check.png');
+}
+li.hasnt {
+    list-style-image: url('./img/close.png');
+}
+/* li{
+    list-style-position: inside;
+} */
+/* li::marker{
+    line-height: 1.2;
+    transform: translateY(50%);
+} */
+.contact{
+    position:absolute;
+    top:360px;
+    width:80% !important;
+    left:10%;
+}
+.bdd{
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    font-weight: 700;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size:26px;
+}
+.factura{
+    position:absolute;
+    top: 140px;
+    left:12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.caracteristicasB{
+    position:relative;
+    top:180px;
+    left:12px;
+}
+.vps{
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    font-weight: 700;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size:26px;
+}
+.caracteristicasC{
+    position:relative;
+    top:200px;
+    left:12px;
+}
+.col33{
+    position:relative;
+
+    height: 480px;
+    width:280px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-left:50%;
+    transform: translateX(-45%);
+    -webkit-box-shadow: 0px 8px 20px rgba(57, 63, 70, 0.25);
+    -moz-box-shadow: 0px 8px 20px rgba(57, 63, 70, 0.25);
+    box-shadow: 0px 8px 20px rgba(57, 63, 70, 0.25);
+}
+.contactC{
+    position:absolute;
+    top:420px;
+    width:80% !important;
+    left:10%;
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .col3,.col33{
+        width:245px !important;
+
+    }
+    .cursos,.headin,.price,.factura{
+        left:10px;
+    }
+    .factura{
+        font-size:15px;
+    }
+    ul{
+        margin-left:-20px;
+        font-size: 13px;
+
+    }
+
+}
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .title{
+        height:2340px;
+    }
+    .pad{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .title{
+        height:2380px;
+    }
+    .pad{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .service{
+        font-size:18px;
+    }
+
+}

@@ -1,100 +1,86 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/css/welcome.css" rel="stylesheet">
 
-        <title>Laravel</title>
+@extends('layouts.app')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+@section('content')
+<div class="container-fluid rela">
+    <div class="row mid"></div>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <div class="row justify-content-center rela">
+        <div class='col-2'></div>{{-- Hide on x-small --}}
+        {{-- <div class='col-1 d-block d-sm-none'></div>{{-- Show on x-small --}}
+        <div class="col-2 outService">
+            <a class='linkMe' href='soporte'>
+                <div class='reparacion'>
+                    <img class='reparacionImg' src='css/img/reparacion.png' width="65" height="65">
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+                    <p class='p_1'>Soporte técnico para pc y laptop.</p>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+            </a>
         </div>
-    </body>
-</html>
+        <div class='col-1'></div>
+
+        <div class="col-2 outService">
+            <a class='linkMe' href='hosting'>
+                <div class='hosting'>
+                    <img class='hostingImg' src='css/img/hosting.png' width="65" height="65">
+
+                    <p class='p_1'>Hosting y dominios</p>
+                </div>
+            </a>
+        </div>
+        <div class='col-1'></div>
+        <div class="col-2 outService">
+            <a class='linkMe' href='development'>
+                <div class='marketing'>
+                    <img class='marketingImg' src='css/img/desarollo.png' width="65" height="65">
+
+                    <p class='p_1'>Desarollo de software y web.</p>
+                </div>
+            </a>
+        </div>
+        <div class='col-2'></div>
+    </div>
+    <div class="row justify-content-center rela2">
+
+        <div class='col-2'></div>{{-- Hide on x-small --}}
+        {{-- <div class='col-1 d-block d-sm-none'></div>{{-- Show on x-small  --}}
+        <div class="col-2 outService">
+
+            <a class='linkMe' href='capacitaciones'>
+
+                <div class='reparacion'>
+                    <img class='reparacionImg' src='css/img/cursos.png' width="65" height="65">
+
+                    <p class='p_1'>Cursos y capacitaciones.</p>
+                </div>
+
+            </a>
+
+
+        </div>
+        <div class='col-1'></div>
+        <div class="col-2 outService">
+
+            <a class='linkMe' href='diseño'>
+                <div class='hosting'>
+                    <img class='hostingImg' src='css/img/diseño.png' width="65" height="65">
+
+                    <p class='p_1'>Diseño gráfico</p>
+                </div>
+            </a>
+        </div>
+        <div class='col-1'></div>
+        <div class="col-2 outService">
+            <a class='linkMe' href='marketing'>
+                <div class='marketing'>
+                    <img class='marketingImg' src='css/img/marketing.png' width="65" height="65">
+
+                    <p class='p_1'>Marketing</p>
+                </div>
+            </a>
+        </div>
+        <div class='col-2'></div>
+    </div>
+</div>
+@endsection

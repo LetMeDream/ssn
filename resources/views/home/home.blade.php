@@ -4,7 +4,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="{{ asset('css/myapp.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/myapp.css') }}" rel="stylesheet"> --}}
 
 
     <meta charset="utf-8">
@@ -23,12 +23,20 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
 </head>
+<style>
+
+    .navV{
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+</style>
 <body>
     <div id="app">
-        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <a class="navbar-brand navV" href="{{ url('/') }}">
+                    Sistemas y Servicios Nuñez
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -62,7 +70,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Desconectarse') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -74,18 +82,10 @@
                     </ul>
                 </div>
             </div>
-        </nav> --}}
+        </nav>
 
         <main class="py-4">
 
-            <div class='start'>
-
-                <img class='ssn' src='/css/img/ssn.png'>
-                <p class='Welcome'>Bienvenido a Sistemas y Servicios Nuñez</p>
-                <br>
-                <p class='ayuda'>¿Con qué necesitas ayuda?</p>
-
-            </div>
 
             <div>
                 @yield('content')

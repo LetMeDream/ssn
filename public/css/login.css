@@ -1,0 +1,48 @@
+.cardSelf{
+
+    width:60%;
+    margin-left:20% ;
+    top:113% !important;
+
+}
+.cardHead{
+    position:relative;
+    padding:0px !important;
+    margin: 0 !important;
+    height:60px;
+}
+.logo{
+    height:40%;
+    position:relative;
+    top:30%;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+input{
+    height:70% !important;
+    border-radius: 4px !important;
+    margin: .2em  !important;
+    padding: 0.1rem !important;
+}
+.form-group{
+    margin-top:0.5rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.log{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    transform: translateX(-50%);
+    top:12px;
+    left: 50%;
+}
+#remember{
+    margin-left:-20px !important;
+}
+#submitty{
+    transform: translateX(25%);
+}
+#forgot{
+    transform: translateX(-10%);
+}

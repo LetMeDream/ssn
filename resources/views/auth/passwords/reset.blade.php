@@ -1,13 +1,17 @@
+<link href="/css/reset.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
 @extends('layouts.app')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+            <div class="card cardSelf">
+                <div class="card-header cardHead">{{ __('Restaurar contraseña') }}</div>
 
-                <div class="card-body">
+                <div class="card-body cardBody">
                     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
