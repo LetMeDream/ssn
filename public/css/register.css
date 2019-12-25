@@ -1,8 +1,9 @@
+html,body{
+    height: 100%;
+}
 .cardSelf{
 
-    width:60%;
-    margin-left:20% ;
-    top:100%;
+    top:60%;
 
 }
 .cardHead{
@@ -20,7 +21,6 @@
 
 }
 input{
-    height:70% !important;
     border-radius: 4px !important;
     margin: .2em  !important;
     padding: 0.1rem !important;
@@ -29,5 +29,36 @@ input{
     margin-top:0.5rem !important;
     margin: 0 !important;
     padding: 0 !important;
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .cardSelf{
+        position: absolute;
+
+        top:20% !important;
+    }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .cardSelf{
+        position: absolute;
+
+        top:20% !important;
+    }
+
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .cardSelf{
+        position: absolute;
+        top:20%;
+    }
 }
 

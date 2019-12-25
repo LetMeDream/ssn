@@ -1,24 +1,24 @@
-.cardSelf{
+/* .cardSelf{
 
     width:60%;
     margin-left:20% ;
     top:100%;
 
-}
+} */
 .cardHead{
     position:relative;
     padding:0px !important;
     margin: 0 !important;
     height:60px;
 }
-.logo{
+/* .logo{
     height:40%;
     position:relative;
     top:30%;
     left:50%;
     transform: translateX(-50%);
 
-}
+} */
 input{
     height:70% !important;
     border-radius: 4px !important;

@@ -2,7 +2,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 
-@extends('layouts.app')
+@extends('layouts.new')
 
 @section('content')
 <div class="container">

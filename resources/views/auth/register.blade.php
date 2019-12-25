@@ -1,11 +1,11 @@
 <link href="/css/register.css" rel="stylesheet">
 
-@extends('layouts.app')
+@extends('layouts.new')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-lg-8">
             <div class="card cardSelf">
                 <div class="card-header cardHead">
 

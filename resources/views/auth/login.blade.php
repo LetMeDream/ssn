@@ -1,12 +1,12 @@
 <link href="/css/login.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-@extends('layouts.app')
+@extends('layouts.new')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <div class="card cardSelf">
                 <div class="card-header cardHead">
                     <h3 class='log'>Ingresar</h3>
@@ -50,14 +50,14 @@
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('Recodar cuenta') }}
+                                        {{ __('Recordar cuenta') }}
                                     </label>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
+                            <div class="col-md-8 offset-md-2">
                                 <button type="submit" class="btn btn-outline-secondary" id='submitty'>
                                     {{ __('Ingresar') }}
                                 </button>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Hostings;
 
 class HostingController extends Controller
 {
@@ -10,32 +11,83 @@ class HostingController extends Controller
     public function hosting(){
         return view('servicios.hosting');
     }
+
+    public function store(Request $request){
+
+        $data = $request->validate([
+            'nombre' => 'required',
+            'apellido' => 'required',
+            'telefono' => 'digits:11',
+            'correo' => 'required',
+            'whatsapp' => 'required',
+            'tipo' => 'required',
+            'plan' => 'required',
+            'mensaje' => ''
+        ]);
+
+        /* dd($request->all()); */
+
+        $hostings = New Hostings;
+        $hostings->create($data);
+
+        return back()->with('mensaje', 'Solicitud enviada. En breve nos contactaremos con usted.');
+
+    }
+
     public function hostingestudiante(){
 
-        $plan = '1$/mensual';
+        $tipo = 'Hosting';
+        $plan = 'Estudiante';
 
-        return view('servicios.hosting.estudiante', compact('plan'));
+        return view('servicios.hosting.estudiante', compact('tipo','plan'));
     }
+
     public function hostingbasico(){
-        return view('servicios.hosting.basico');
+
+        $tipo = 'Hosting';
+        $plan = 'Básico';
+
+        return view('servicios.hosting.basico', compact('tipo', 'plan'));
     }
+
     public function hostingemprendedor(){
-        return view('servicios.hosting.emprendedor');
+
+        $tipo = 'Hosting';
+        $plan = 'Emprendedor';
+
+        return view('servicios.hosting.emprendedor', compact('tipo', 'plan' ));
     }
+
     public function base_de_datos(){
-        return view('servicios.hosting.base_de_datos');
+        $tipo = 'Bdd';
+        $plan = 'Mysql_profesional';
+
+        return view('servicios.hosting.base_de_datos', compact('tipo', 'plan'));
     }
+
     public function vpsbasico(){
-        return view('servicios.vps.basico');
+        $tipo = 'Vps';
+        $plan = 'Básico';
+
+        return view('servicios.vps.basico', compact('tipo', 'plan'));
     }
     public function vpsavanzado(){
-        return view('servicios.vps.avanzado');
+        $tipo = 'Vps';
+        $plan = 'Avanzado';
+
+        return view('servicios.vps.avanzado', compact('tipo', 'plan'));
     }
     public function dominioregional(){
-        return view('servicios.dominios.regional');
+        $tipo = 'Dominio';
+        $plan = 'Regional';
+
+        return view('servicios.dominios.regional', compact('tipo', 'plan'));
     }
     public function dominioglobal(){
-        return view('servicios.dominios.global');
+        $tipo = 'Dominio';
+        $plan = 'Global';
+
+        return view('servicios.dominios.global', compact('tipo', 'plan'));
     }
 
 }

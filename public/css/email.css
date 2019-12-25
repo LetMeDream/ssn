@@ -1,8 +1,11 @@
+html,body{
+    height: 100%;
+}
 .cardSelf{
     position: absolute;
-    width:60%;
-    margin-left:20% ;
-    top:138% !important;
+
+
+    top:100% !important;
 
 }
 .cardHead{
@@ -20,9 +23,10 @@
 
 }
 input{
-    height:70% !important;
+    height:100% !important;
     border-radius: 4px !important;
     margin: .2em  !important;
+    margin-bottom: 6px;
     padding: 0.1rem !important;
 }
 .form-group{
@@ -51,4 +55,39 @@ input{
     position:absolute;
     top:25%;
     left:50;
+}
+.buttoni{
+    margin-top: 10px !important;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .cardSelf{
+        position: absolute;
+
+        top:20% !important;
+    }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .cardSelf{
+        position: absolute;
+
+        top:20% !important;
+    }
+
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .cardSelf{
+        position: absolute;
+
+        top:70% !important;
+
+    }
 }

@@ -23,23 +23,37 @@
                 <h4 class='hi'> Completa este formulario y te contactaremos cuanto antes </h4>
 
                 <div class='row justify-content-center'>
+                    <div class='col-md-8'>
+                        @if (session('mensaje'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{ session('mensaje') }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    @endif
+                    </div>
+                </div>
+
+                <div class='row justify-content-center'>
 
                     <div class='col-md-4'>
-                        <form>
+                        <form method='post' action='{{ Route('hosting.store') }}'>
+                            @csrf
                             <!-- Nombre -->
                             <div class="form-group">
                               <label class='labeli' for="nombre">Nombre</label>
-                              <input name='nombre' type="text" class="form-control" id="nombre" placeholder="Nombre">
+                              <input autocomplete="off" value='{{ old('nombre') }}' name='nombre' type="text" class="form-control @error('nombre') is-invalid @enderror" id="nombre" placeholder="Nombre">
                             </div>
                             <!-- Apellido -->
                             <div class="form-group">
                                 <label class='labeli' for="nombre">Apellido</label>
-                                <input name='apellido' type="text" class="form-control" id="apellido" placeholder="Apellido">
+                                <input autocomplete="off" value='{{ old('apellido') }}' name='apellido' type="text" class="form-control @error('apellido') is-invalid @enderror" id="apellido" placeholder="Apellido">
                             </div>
                             <!-- Teléfono -->
                             <div class="form-group">
                                 <label class='labeli' for="nombre">Teléfono</label>
-                                <input name='telefono' type="number" class="form-control" id="telefono" placeholder="0414-1234567">
+                                <input autocomplete="off" value='{{ old("telefono") }}' name='telefono' {{-- type="number" --}} class="form-control @error('telefono') is-invalid @enderror" id="telefono" placeholder="0414-1234567">
                             </div>
                             <!-- Whatsapp -->
                             <p class='labeli'>¿Tienes Whatsapp?</p>
@@ -49,30 +63,41 @@
                                         <div class="col-1"></div>
                                         <div class="col-4">
                                             <label class="form-check-label text-muted" for="si">Sí</label>
-                                            <input name='whatsapp' type="radio" class="form-check-input" id="si">
+                                            <input @if(old('whatsapp')=='1') checked   @endif value='1'
+                                            name='whatsapp' type="radio" class="form-check-input" id="si">
                                         </div>
                                         <div class="col-2"></div>
                                         <div class="col-4">
                                             <label class="form-check-label text-muted" for="no">No</label>
-                                            <input name='whatsapp' type="radio" class="form-check-input" id="no">
+                                            <input  @if(old('whatsapp')=='0') checked   @endif  value='0'
+                                             name='whatsapp' type="radio" class="form-check-input" id="no">
                                         </div>
                                         <div class="col-1"></div>
 
                                 </div>
+                                @if ($errors->has('whatsapp'))
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        Por favor, <strong>elija una opción.</strong>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                @endif
                             </div>
                             <!-- Email -->
                             <div class="form-group">
                                 <label class='labeli' for="nombre">Correo </label>
-                                <input name='mail' type="email" class="form-control" id="telefono" placeholder="email@mail.com">
+                                <input autocomplete="off" value='{{ old('correo') }}' name='correo' type="email" class="form-control @error('correo') is-invalid @enderror" placeholder="email@mail.com">
                             </div>
 
                             <!-- Mensaje -->
                             <div class="form-group">
                                 <label class='labeli' for="mensaje">Mensaje </label>
-                                <textarea rows='2' name='mensaje' type="email" class="form-control" id="mensaje"></textarea>
+                                <textarea rows='2' name='mensaje' type="email" class="form-control @error('mensaje') is-invalid @enderror" id="mensaje">{{ old('mensaje') }}</textarea>
                             </div>
                             <!-- Hidden Plan, just for testing purposes -->
-                            {{-- <input type='text' value={{ $plan }} hidden> --}}
+                            <input name='tipo' type='text' value={{ $tipo }} hidden>
+                            <input name='plan' type='text' value={{ $plan }} hidden>
 
                             <button class='btn btn-outline-primary btn-block sendi'> Enviar </button>
                         </form>
