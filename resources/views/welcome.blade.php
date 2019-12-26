@@ -6,9 +6,12 @@
 <div class="container-fluid rela">
     <div class="row mid"></div>
 
+</div>
+<div class="container-fluid relax">
     <div class="row justify-content-center rela">
-        <div class='col-2'></div>{{-- Hide on x-small --}}
-        {{-- <div class='col-1 d-block d-sm-none'></div>{{-- Show on x-small --}}
+        <div class='col-2 d-none d-sm-block'></div>{{-- Hide on x-small --}}
+        <div class='col-1 d-block d-sm-none'></div>{{-- Show on x-small  --}}
+        <div class='d-block d-sm-none spacing'></div>{{-- Show on x-small  --}}
         <div class="col-2 outService">
             <a class='linkMe' href='soporte'>
                 <div class='reparacion'>
@@ -43,8 +46,9 @@
     </div>
     <div class="row justify-content-center rela2">
 
-        <div class='col-2'></div>{{-- Hide on x-small --}}
-        {{-- <div class='col-1 d-block d-sm-none'></div>{{-- Show on x-small  --}}
+        <div class='col-2 d-none d-sm-block'></div>{{-- Hide on x-small --}}
+        <div class='col-1 d-block d-sm-none'></div>{{-- Show on x-small  --}}
+        <div class='d-block d-sm-none spacing'></div>{{-- Show on x-small  --}}
         <div class="col-2 outService">
 
             <a class='linkMe' href='capacitaciones'>
@@ -82,5 +86,6 @@
         </div>
         <div class='col-2'></div>
     </div>
+
 </div>
 @endsection

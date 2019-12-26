@@ -66,6 +66,16 @@ input{
     position:relative !important;
     padding-top:10px;
 }
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .relax{
+        margin-top:70px;
+    }
+    .spacing{
+        width:16.5px;
+    }
+}
+
 .mid{
     height:48%;
 }

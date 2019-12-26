@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\ServicioTecnico;
 
+use App\Mail\SoporteTecnicoMail;
+use Illuminate\Support\Facades\Mail;
+
 class SoporteController extends Controller
 {
     //
@@ -28,6 +31,11 @@ class SoporteController extends Controller
         $servicio = new ServicioTecnico;
 
         $servicio->create($data);
+
+        /** Sending an email */
+        Mail::to('raulalfonzo66@gmail.com')->send(new SoporteTecnicoMail($data) );
+
+
 
         return back()->with('mensaje', 'Solicitud enviada. En breve nos contactaremos con usted.');
 

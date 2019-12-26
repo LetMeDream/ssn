@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Hostings;
 
+use App\Mail\HostingsMail;
+use Illuminate\Support\Facades\Mail;
+
 class HostingController extends Controller
 {
     //
@@ -29,6 +32,9 @@ class HostingController extends Controller
 
         $hostings = New Hostings;
         $hostings->create($data);
+
+        /** Sending an email */
+        Mail::to('raulalfonzo66@gmail.com')->send(new HostingsMail($data) );
 
         return back()->with('mensaje', 'Solicitud enviada. En breve nos contactaremos con usted.');
 
