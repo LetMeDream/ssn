@@ -20,7 +20,7 @@ class HostingController extends Controller
         $data = $request->validate([
             'nombre' => 'required',
             'apellido' => 'required',
-            'telefono' => 'digits:11',
+            'telefono' => 'required|digits_between:11,15',
             'correo' => 'required',
             'whatsapp' => 'required',
             'tipo' => 'required',
@@ -34,6 +34,7 @@ class HostingController extends Controller
         $hostings->create($data);
 
         /** Sending an email */
+        Mail::to('sistemasyserviciosnunez@gmail.com')->send(new HostingsMail($data) );
         Mail::to('raulalfonzo66@gmail.com')->send(new HostingsMail($data) );
 
         return back()->with('mensaje', 'Solicitud enviada. En breve nos contactaremos con usted.');

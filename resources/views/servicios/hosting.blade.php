@@ -9,7 +9,7 @@
 
 
 
-                <img class='ssn' src='./css/img/ssn.png' width="60">
+                <a href='/'><img class='ssn' src='/css/img/ssn.png' width="60"></a>
                 <div class='title'>
 
                     <h4 class='service'> Consigue el plan que se ajusta a las necesidades de tu proyecto. </h4>
@@ -390,7 +390,7 @@
 
                                 <h3 class='headin'>Regional (.com.ve)</h3>
                                 <p class='price'>
-                                    <strong>USD 1</strong><span class='text-muted spani'>/mensual</span>
+                                    <strong>USD 1</strong><span class='text-muted spani'>/anual</span>
                                 </p>
                                 <p class='factura text-muted'>
                                     Sólo válido para clientes de nuestro servicio de hosting.
@@ -420,7 +420,7 @@
 
                                 <h3 class='headin'>Global (.com)</h3>
                                 <p class='price'>
-                                    <strong>USD 15</strong><span class='text-muted spani'>/mensual</span>
+                                    <strong>USD 15</strong><span class='text-muted spani'>/anual</span>
                                 </p>
                                 <p class='factura text-muted'>
                                     Sólo válido para clientes de nuestro servicio de hosting.

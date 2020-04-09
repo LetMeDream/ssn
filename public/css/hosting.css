@@ -160,6 +160,7 @@ li.hasnt {
     top:360px;
     width:80% !important;
     left:10%;
+    border-radius: 10px !important;
 }
 .bdd{
     font-family: 'Roboto', sans-serif;
@@ -212,6 +213,7 @@ li.hasnt {
     top:420px;
     width:80% !important;
     left:10%;
+    border-radius: 10px !important;
 }
 
 /* Large devices (desktops, 992px and up) */

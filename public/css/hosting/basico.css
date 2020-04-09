@@ -30,6 +30,12 @@ body,html{
     color:rgba(57, 63, 70, 0.6);
 
 }
+.starV{
+
+    width:50px !important;
+    height:50px !important;
+
+}
 .reparacion{
     padding-top:15px;
     margin-left: 50%;

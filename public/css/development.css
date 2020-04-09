@@ -111,6 +111,16 @@ textarea{
     -moz-box-shadow: 0px 8px 20px rgba(57, 63, 70, 0.25);
     box-shadow: 0px 8px 20px rgba(57, 63, 70, 0.25);
 }
+.dev{
+    height: 305px !important;
+    position:relative !important;
+
+}
+.devBtn{
+    position:absolute !important;
+    top:240px !important;
+    border-radius: 10px !important;
+}
 .cursos{
     position:absolute;
     width:32px;
@@ -160,6 +170,7 @@ li.hasnt {
     top:360px;
     width:80% !important;
     left:10%;
+    border-radius: 10px !important;
 }
 .bdd{
     font-family: 'Roboto', sans-serif;
@@ -212,6 +223,7 @@ li.hasnt {
     top:420px;
     width:80% !important;
     left:10%;
+    border-radius: 10px !important;
 }
 
 
@@ -222,6 +234,11 @@ li.hasnt {
         width:245px !important;
 
     }
+    .caractDev{
+        font-size: 12px;
+        width:90%;
+    }
+
     .cursos,.headin,.price,.factura{
         left:10px;
     }

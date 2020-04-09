@@ -9,7 +9,7 @@
 
 
 
-                <img class='ssn' src='./css/img/ssn.png' width="60">
+                <a href='/'><img class='ssn' src='/css/img/ssn.png' width="60"></a>
                 <div class='title'>
 
                     <h4 class='hi'> Has escogido nuestro </h4>

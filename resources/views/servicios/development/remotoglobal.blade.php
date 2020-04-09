@@ -1,4 +1,4 @@
-<link href='/css/vps/basico.css' rel='stylesheet'>
+<link href='/css/hosting/basico.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 @extends('layouts.new')
@@ -14,9 +14,9 @@
 
                     <h4 class='hi'> Has escogido nuestro </h4>
 
-                    <img class='reparacion' src='../css/img/globalV.png' width='85' height='100'>
+                    <img class='reparacion starV' src='/css/img/starV.png' >
 
-                    <h4 class='service'> Dominio global (.com) </h4>
+                    <h4 class='service'> Plan <em>socios por horas</em>. </h4>
 
                 </div>
 
@@ -38,7 +38,7 @@
                 <div class='row justify-content-center'>
 
                     <div class='col-md-4'>
-                        <form method='post' action='{{ Route('hosting.store') }}'>
+                        <form method='post' action='{{ Route('development.store') }}'>
                             @csrf
                             <!-- Nombre -->
                             <div class="form-group">
@@ -87,7 +87,7 @@
                             <!-- Email -->
                             <div class="form-group">
                                 <label class='labeli' for="nombre">Correo </label>
-                                <input autocomplete="off" value='{{ old("correo") }}' name='correo' type="email" class="form-control @error('correo') is-invalid @enderror" placeholder="email@mail.com">
+                                <input autocomplete="off" value='{{ old('correo') }}' name='correo' type="email" class="form-control @error('correo') is-invalid @enderror" placeholder="email@mail.com">
                             </div>
 
                             <!-- Mensaje -->
@@ -96,16 +96,14 @@
                                 <textarea rows='2' name='mensaje' type="email" class="form-control @error('mensaje') is-invalid @enderror" id="mensaje">{{ old('mensaje') }}</textarea>
                             </div>
                             <!-- Hidden Plan, just for testing purposes -->
-                            <input name='tipo' type='text' value={{ $tipo }} hidden>
-                            <input name='plan' type='text' value={{ $plan }} hidden>
+                            <input name='tipo' type='text' value='{{ $tipo }}' hidden>
+                            <input name='plan' type='text' value='{{ $plan }}' hidden>
 
                             <button class='btn btn-outline-primary btn-block sendi'> Enviar </button>
                         </form>
                     </div>
 
                 </div>
-
-
 
     </div>
 

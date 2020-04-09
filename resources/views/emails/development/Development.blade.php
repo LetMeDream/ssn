@@ -1,5 +1,5 @@
 @component('mail::message')
-# Un servicio de <b>Hosting</b> ha sido registrado con los siguientes datos
+# Un servicio de <b>Desarrollo de Software y Web</b> ha sido registrado con los siguientes datos
 
 <strong>Nombre: </strong> {{ $data['nombre'] . ' ' . $data['apellido'] }} <br>
 <strong>Correo: </strong> {{ $data['correo'] }} <br>

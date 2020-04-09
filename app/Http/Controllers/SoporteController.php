@@ -20,7 +20,7 @@ class SoporteController extends Controller
         $data=$request->validate([
             'nombre' => 'required',
             'apellido' => 'required',
-            'telefono' => 'required',
+            'telefono' => 'required|digits_between:11,15',
             'correo' => 'required',
             'equipo' => 'required',
             'whatsapp' => 'required'
@@ -33,6 +33,7 @@ class SoporteController extends Controller
         $servicio->create($data);
 
         /** Sending an email */
+        Mail::to('sistemasyserviciosnunez@gmail.com')->send(new SoporteTecnicoMail($data) );
         Mail::to('raulalfonzo66@gmail.com')->send(new SoporteTecnicoMail($data) );
 
 

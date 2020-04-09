@@ -1,4 +1,4 @@
-<link href='/css/vps/basico.css' rel='stylesheet'>
+<link href='/css/hosting/basico.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 @extends('layouts.new')
@@ -14,9 +14,9 @@
 
                     <h4 class='hi'> Has escogido nuestro </h4>
 
-                    <img class='reparacion' src='../css/img/globalV.png' width='85' height='100'>
+                    <img class='reparacion' src='/css/img/regionalV.png' width='85' height='100'>
 
-                    <h4 class='service'> Dominio global (.com) </h4>
+                    <h4 class='service'> Servicio de Desarrollo en Wordpress (regional). </h4>
 
                 </div>
 
@@ -38,7 +38,7 @@
                 <div class='row justify-content-center'>
 
                     <div class='col-md-4'>
-                        <form method='post' action='{{ Route('hosting.store') }}'>
+                        <form method='post' action='{{ Route('development.store') }}'>
                             @csrf
                             <!-- Nombre -->
                             <div class="form-group">
@@ -87,7 +87,7 @@
                             <!-- Email -->
                             <div class="form-group">
                                 <label class='labeli' for="nombre">Correo </label>
-                                <input autocomplete="off" value='{{ old("correo") }}' name='correo' type="email" class="form-control @error('correo') is-invalid @enderror" placeholder="email@mail.com">
+                                <input autocomplete="off" value='{{ old('correo') }}' name='correo' type="email" class="form-control @error('correo') is-invalid @enderror" placeholder="email@mail.com">
                             </div>
 
                             <!-- Mensaje -->
@@ -104,8 +104,6 @@
                     </div>
 
                 </div>
-
-
 
     </div>
 
