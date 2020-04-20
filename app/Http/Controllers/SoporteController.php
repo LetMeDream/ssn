@@ -20,7 +20,7 @@ class SoporteController extends Controller
         $data=$request->validate([
             'nombre' => 'required',
             'apellido' => 'required',
-            'telefono' => 'required|digits_between:11,15',
+            'telefono' => 'required',
             'correo' => 'required',
             'equipo' => 'required',
             'whatsapp' => 'required'

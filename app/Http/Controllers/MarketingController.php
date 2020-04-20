@@ -25,7 +25,7 @@ class MarketingController extends Controller
         $data = request()->validate([
             'nombre' => 'required',
             'apellido' => 'required',
-            'telefono' => 'required|digits_between:11,15',
+            'telefono' => 'required',
             'correo' => 'required',
             'whatsapp' => 'required'
         ]);

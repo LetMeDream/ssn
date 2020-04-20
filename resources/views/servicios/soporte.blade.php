@@ -54,7 +54,7 @@
                             <!-- Teléfono -->
                             <div class="form-group">
                                 <label class='labeli' for="nombre">Teléfono</label>
-                                <input value='{{ old('telefono') }}' name='telefono' class="form-control @error("telefono") is-invalid @enderror" id="telefono" placeholder="0414-1234567">
+                                <input value='{{ old('telefono') }}' autocomplete='off' name='telefono' class="form-control @error("telefono") is-invalid @enderror" id="telefono" placeholder="0414-1234567">
                             </div>
                             <!-- Whatsapp -->
                             <p class='labeli'>¿Tienes Whatsapp?</p>
@@ -88,7 +88,7 @@
                             <!-- Email -->
                             <div class="form-group">
                                 <label class='labeli' for="nombre">Correo </label>
-                                <input value='{{ old('correo') }}' name='correo' type="email" class="form-control @error("correo") is-invalid @enderror" id="telefono" placeholder="email@mail.com">
+                                <input value='{{ old('correo') }}' autocomplete='off' name='correo' type="email" class="form-control @error("correo") is-invalid @enderror" id="telefono" placeholder="email@mail.com">
                             </div>
                             <!-- Equipo -->
                             <p class='labeli'>¿Qué equipo tienes?</p>
@@ -132,5 +132,19 @@
 
 
     </div>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5e9dd34a35bcbb0c9ab2f968/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 @endsection
