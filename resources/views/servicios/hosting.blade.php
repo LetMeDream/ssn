@@ -12,7 +12,7 @@
                 <div class="barra">
                     <a href='/'><img class='ssn' src='/css/img/ssn.png' width="60"></a>
 
-                    <a class='ingreso' href="https://ssn.com.ve:8443/">Ingresar al servidor</a>
+                    <a class='ingreso' target="_blank" href="https://ssn.com.ve:8443/">Ingresar al servidor</a>
 
                 </div>
 
