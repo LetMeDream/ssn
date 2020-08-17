@@ -1,7 +1,7 @@
 body,html{
     margin: 0 !important;
     padding: 0px !important;
-    background-color: white;
+    background-color: rgba(242, 242, 242, 0.761);
 
 }
 .title{
@@ -9,7 +9,7 @@ body,html{
     margin:0 !important;
     padding-top:45px;
     width:100% !important;
-    height: 2360px;
+    height: 100%;
     background-color: rgba(242, 242, 242, 0.761);
     -webkit-box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.19);
     -moz-box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.19);
@@ -239,7 +239,7 @@ li.hasnt {
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     .col3,.col33{
-        width:250px !important;
+        width:300px !important;
 
     }
     .cursos,.headin,.price,.factura{
@@ -247,6 +247,7 @@ li.hasnt {
     }
     .factura{
         font-size:14px;
+        padding-right: 8px;
     }
     ul{
         margin-left:-15px;
@@ -254,9 +255,7 @@ li.hasnt {
     .justMid{
         padding-top:30px;
     }
-    .title{
-        height:2800px;
-    }
+
 
 }
 
@@ -264,7 +263,7 @@ li.hasnt {
 @media (min-width: 576px) and (max-width: 767.98px) {
 
     .title{
-        height:4340px;
+        height:100%;
     }
     .pad{
         padding-top: 10px;
@@ -277,7 +276,7 @@ li.hasnt {
 @media (max-width: 575.98px) {
 
     .title{
-        height:4400px;
+        height:100%;
     }
     .pad{
         padding-top: 10px;

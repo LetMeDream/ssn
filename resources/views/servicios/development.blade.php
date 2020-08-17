@@ -26,7 +26,7 @@
 
                                 <h3 class='headin'>Wordpress regional</h3>
                                 <p class='price'>
-                                    <strong>USD 100</strong><span class='text-muted spani'>/facturación única.</span>
+                                    <strong>USD 120</strong><span class='text-muted spani'>/facturación única.</span>
                                 </p>
 
                                 <div class='caracteristicas'>
@@ -87,7 +87,7 @@
 
                                 <h3 class='headin'>Wordpress regional</h3>
                                 <p class='price'>
-                                    <strong>USD 100</strong><span class='text-muted spani'>/facturación única.</span>
+                                    <strong>USD 120</strong><span class='text-muted spani'>/facturación única.</span>
                                 </p>
 
                                 <div class='caracteristicas'>
@@ -146,7 +146,7 @@
                     </div>
 
                     {{-- Planes de dominios --}}
-                    <strong><h3 class='vps'>Planes de desarrollo remoto</h3></strong>
+                    <strong><h3 class='vps'>Planes de desarrollo y soporte remoto</h3></strong>
 
                     <div class="row justify-content-center">
 

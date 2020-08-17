@@ -10,10 +10,205 @@
 
 
                 <a href='/'><img class='ssn' src='/css/img/ssn.png' width="60"></a>
-                <div class='title'>
+
 
                     <h4 class='service'> Consigue el plan que se ajusta a las necesidades de tu proyecto. </h4>
-                    {{-- Hosting --}}
+
+                    {{-- Hosting full start--}}
+                    <strong>
+                        <h3 class="planes">
+                            Planes full (Hosting+Dominio)
+                        </h3>
+                    </strong>
+
+                    <div class="row justify-content-center">
+                        {{-- Estudiantes --}}
+                        <div class="col-lg-3 d-md-none d-lg-block pad">
+                            <div class='col3'>
+
+                                <img class='cursos' src='./css/img/cursos2.png' >
+
+                                <h3 class='headin'>Estudiantes</h3>
+                                <p class='price'>
+                                    <strong>USD 27</strong><span class='text-muted spani'>/anuales</span>
+                                </p>
+
+                                <div class='caracteristicas'>
+
+                                    <p class='caract'><strong>Caracteristicas</strong></p>
+                                    <ul class='has'>
+                                        <li class='has'><span class='text-muted'>Implementación Wordpress</span></li>
+                                        <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
+                                        <li class='has'><span class='text-muted'>Base de datos</span></li>
+                                        <li class='has'><span class='text-muted'>Panel de administración</span></li>
+                                        <li class='has'><span class='text-muted'>Tu <b>dominio</b>.com o com.ve</span></li>
+                                        <li class="has"><span class="text-muted">Certificado SSL gratis</span></li>
+                                    </ul>
+
+                                </div>
+
+                                <a href='{{ Route('estudiante') }}'
+                                 {{-- href='hosting/estudiante' --}} class='btn btn-primary btn-block contact'>CONTACTAR</a>
+
+                            </div>
+                        </div>
+                        {{-- Básico --}}
+                        <div class="col-lg-3 d-md-none d-lg-block pad">
+                            <div class='col3'>
+
+                                <img class='cursos' src='./css/img/basico.png' >
+
+                                <h3 class='headin'>Básico</h3>
+                                <p class='price'>
+                                    <strong>USD 50</strong><span class='text-muted spani'>/anual</span>
+                                </p>
+
+                                <div class='caracteristicas'>
+
+                                    <p class='caract'><strong>Caracteristicas</strong></p>
+                                    <ul class='has'>
+                                        <li class='has'><span class='text-muted'>Implementación Wordpress</span></li>
+                                        <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
+                                        <li class='has'><span class='text-muted'>Base de datos</span></li>
+                                        <li class='has'><span class='text-muted'>Panel de administración</span></li>
+                                        <li class='has'><span class='text-muted'>Dominio .com o dominio .com.ve</span></li>
+                                        <li class="has"><span class="text-muted">Certificado SSL gratis</span></li>
+                                    </ul>
+
+                                </div>
+
+                                <a href='hosting/basico' class='btn btn-primary btn-block contact'>CONTACTAR</a>
+
+
+                            </div>
+                        </div>
+                        {{-- Emprendedor --}}
+                        <div class="col-lg-3 d-md-none d-lg-block pad">
+                            <div class='col3'>
+
+                                <img class='cursos' src='./css/img/emprendedor.png' >
+
+                                <h3 class='headin'>Emprendedores</h3>
+                                <p class='price'>
+                                    <strong>USD 70</strong><span class='text-muted spani'>/anual</span>
+                                </p>
+
+                                <div class='caracteristicas'>
+
+                                    <p class='caract'><strong>Caracteristicas</strong></p>
+                                    <ul class='has'>
+                                        <li class='has'><span class='text-muted'>Implementación Wordpress</span></li>
+                                        <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
+                                        <li class='has'><span class='text-muted'>Base de datos</span></li>
+                                        <li class='has'><span class='text-muted'>Panel de administración</span></li>
+                                        <li class='has'><span class='text-muted'>Dominio .com o dominio .com.ve</span></li>
+                                        <li class="has"><span class="text-muted">Certificado SSL gratis</span></li>
+                                    </ul>
+
+                                </div>
+
+                                <a href='hosting/emprendedor' class='btn btn-primary btn-block contact'>CONTACTAR</a>
+
+                            </div>
+                        </div>
+
+                        {{-- Estudiantes, sólo tamaño medio --}}
+                        <div class="col-md-4 d-none d-md-block d-lg-none">
+                            <div class='col3'>
+
+                                <img class='cursos' src='./css/img/cursos2.png' >
+
+                                <h3 class='headin'>Estudiantes</h3>
+                                <p class='price'>
+                                    <strong>USD 27</strong><span class='text-muted spani'>/anuales</span>
+                                </p>
+
+                                <div class='caracteristicas'>
+
+                                    <p class='caract'><strong>Caracteristicas</strong></p>
+                                    <ul class='has'>
+                                        <li class='has'><span class='text-muted'>Implementación Wordpress</span></li>
+                                        <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
+                                        <li class='has'><span class='text-muted'>Base de datos</span></li>
+                                        <li class='has'><span class='text-muted'>Panel de administración</span></li>
+                                        <li class='has'><span class='text-muted'>Tu <b>dominio</b>.com o com.ve</span></li>
+                                        <li class="has"><span class="text-muted">Certificado SSL gratis</span></li>
+                                    </ul>
+
+                                </div>
+
+                                <a href='{{ Route('estudiante') }}'
+                                 {{-- href='hosting/estudiante' --}} class='btn btn-primary btn-block contact'>CONTACTAR</a>
+
+                            </div>
+                        </div>
+                        {{-- Básico, sólo tamaño medio --}}
+                        <div class="col-md-4 d-none d-md-block d-lg-none">
+                            <div class='col3'>
+
+                                <img class='cursos' src='./css/img/basico.png' >
+
+                                <h3 class='headin'>Básico</h3>
+                                <p class='price'>
+                                    <strong>USD 50</strong><span class='text-muted spani'>/anual</span>
+                                </p>
+
+                                <div class='caracteristicas'>
+
+                                    <p class='caract'><strong>Caracteristicas</strong></p>
+                                    <ul class='has'>
+                                        <li class='has'><span class='text-muted'>Implementación Wordpress</span></li>
+                                        <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
+                                        <li class='has'><span class='text-muted'>Base de datos</span></li>
+                                        <li class='has'><span class='text-muted'>Panel de administración</span></li>
+                                        <li class='has'><span class='text-muted'>Dominio .com o dominio .com.ve</span></li>
+                                    </ul>
+
+                                </div>
+
+                                <a href='hosting/basico' class='btn btn-primary btn-block contact'>CONTACTAR</a>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row justify-content-center justMid">
+
+                        {{-- Emprendedor, sólo tamaño medio --}}
+                        <div class="col-lg-4 d-none d-md-block d-lg-none">
+                            <div class='col3'>
+
+                                <img class='cursos' src='./css/img/emprendedor.png' >
+
+                                <h3 class='headin'>Emprendedores</h3>
+                                <p class='price'>
+                                    <strong>USD 70</strong><span class='text-muted spani'>/anual</span>
+                                </p>
+
+                                <div class='caracteristicas'>
+
+                                    <p class='caract'><strong>Caracteristicas</strong></p>
+                                    <ul class='has'>
+                                        <li class='has'><span class='text-muted'>Implementación Wordpress</span></li>
+                                        <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
+                                        <li class='has'><span class='text-muted'>Base de datos</span></li>
+                                        <li class='has'><span class='text-muted'>Panel de administración</span></li>
+                                        <li class='has'><span class='text-muted'>Dominio .com o dominio .com.ve</span></li>
+                                    </ul>
+
+                                </div>
+
+                                <a href='hosting/emprendedor' class='btn btn-primary btn-block contact'>CONTACTAR</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    {{-- Hosting full end --}}
+
+                    {{-- Hosting start--}}
                     <strong><h3 class='planes'>Planes de hosting</h3></strong>
 
                     <div class="row justify-content-center">
@@ -25,7 +220,7 @@
 
                                 <h3 class='headin'>Estudiantes</h3>
                                 <p class='price'>
-                                    <strong>USD 2</strong><span class='text-muted spani'>/mensual</span>
+                                    <strong>USD 1</strong><span class='text-muted spani'>/mensual</span>
                                 </p>
 
                                 <div class='caracteristicas'>
@@ -36,7 +231,8 @@
                                         <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
                                         <li class='has'><span class='text-muted'>Base de datos</span></li>
                                         <li class='has'><span class='text-muted'>Panel de administración</span></li>
-                                        <li class='hasnt'><span class='text-muted'>5 correos de 500 MB</span></li>
+                                        <li class='has'><span class='text-muted'>Tu <b>dominio</b>.ssn.com.ve gratis</span></li>
+                                        <li class="has"><span class="text-muted">Certificado SSL gratis</span></li>
                                     </ul>
 
                                 </div>
@@ -65,7 +261,8 @@
                                         <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
                                         <li class='has'><span class='text-muted'>Base de datos</span></li>
                                         <li class='has'><span class='text-muted'>Panel de administración</span></li>
-                                        <li class='hasnt'><span class='text-muted'>5 correos de 500 MB</span></li>
+                                        <li class='has'><span class='text-muted'>Tu <b>dominio</b>.ssn.com.ve gratis</span></li>
+                                        <li class="has"><span class="text-muted">Certificado SSL gratis</span></li>
                                     </ul>
 
                                 </div>
@@ -94,7 +291,8 @@
                                         <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
                                         <li class='has'><span class='text-muted'>Base de datos</span></li>
                                         <li class='has'><span class='text-muted'>Panel de administración</span></li>
-                                        <li class='has'><span class='text-muted'>5 correos de 500 MB</span></li>
+                                        <li class='has'><span class='text-muted'>Tu <b>dominio</b>.ssn.com.ve gratis</span></li>
+                                        <li class="has"><span class="text-muted">Certificado SSL gratis</span></li>
                                     </ul>
 
                                 </div>
@@ -122,8 +320,9 @@
                                         <li class='has'><span class='text-muted'>Implementación Wordpress</span></li>
                                         <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
                                         <li class='has'><span class='text-muted'>Base de datos</span></li>
-                                        <li class='hasnt'><span class='text-muted'>Panel de administración</span></li>
-                                        <li class='hasnt'><span class='text-muted'>5 correos de 500 MB</span></li>
+                                        <li class='has'><span class='text-muted'>Panel de administración</span></li>
+                                        <li class='has'><span class='text-muted'>Tu <b>dominio</b>.ssn.com.ve gratis</span></li>
+                                        <li class="has"><span class="text-muted">Certificado SSL gratis</span></li>
                                     </ul>
 
                                 </div>
@@ -152,7 +351,8 @@
                                         <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
                                         <li class='has'><span class='text-muted'>Base de datos</span></li>
                                         <li class='has'><span class='text-muted'>Panel de administración</span></li>
-                                        <li class='hasnt'><span class='text-muted'>5 correos de 500 MB</span></li>
+                                        <li class='has'><span class='text-muted'>Tu <b>dominio</b>.ssn.com.ve gratis</span></li>
+                                        <li class="has"><span class="text-muted">Certificado SSL gratis</span></li>
                                     </ul>
 
                                 </div>
@@ -186,7 +386,8 @@
                                         <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
                                         <li class='has'><span class='text-muted'>Base de datos</span></li>
                                         <li class='has'><span class='text-muted'>Panel de administración</span></li>
-                                        <li class='has'><span class='text-muted'>5 correos de 500 MB</span></li>
+                                        <li class='has'><span class='text-muted'>Tu <b>dominio</b>.ssn.com.ve gratis</span></li>
+                                        <li class="has"><span class="text-muted">Certificado SSL gratis</span></li>
                                     </ul>
 
                                 </div>
@@ -380,7 +581,7 @@
                     {{-- Planes de dominios --}}
                     <strong><h3 class='vps'>Planes de dominios</h3></strong>
 
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center mb-4">
 
 
                         <div class="col-lg-3 d-md-none d-lg-block pad">
@@ -451,7 +652,7 @@
 
                                 <h3 class='headin'>Regional (.com.ve)</h3>
                                 <p class='price'>
-                                    <strong>USD 1</strong><span class='text-muted spani'>/mensual</span>
+                                    <strong>USD 15</strong><span class='text-muted spani'>/anual</span>
                                 </p>
                                 <p class='factura text-muted'>
                                     Sólo válido para clientes de nuestro servicio de hosting.
@@ -481,7 +682,7 @@
 
                                 <h3 class='headin'>Global (.com)</h3>
                                 <p class='price'>
-                                    <strong>USD 15</strong><span class='text-muted spani'>/mensual</span>
+                                    <strong>USD 15</strong><span class='text-muted spani'>/anual</span>
                                 </p>
                                 <p class='factura text-muted'>
                                     Sólo válido para clientes de nuestro servicio de hosting.
@@ -508,7 +709,6 @@
                     </div>
 
 
-                </div>
 
 
     </div>
