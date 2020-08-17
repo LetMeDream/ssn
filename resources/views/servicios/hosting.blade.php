@@ -25,7 +25,7 @@
 
                                 <h3 class='headin'>Estudiantes</h3>
                                 <p class='price'>
-                                    <strong>USD 1</strong><span class='text-muted spani'>/mensual</span>
+                                    <strong>USD 2</strong><span class='text-muted spani'>/mensual</span>
                                 </p>
 
                                 <div class='caracteristicas'>
@@ -35,7 +35,7 @@
                                         <li class='has'><span class='text-muted'>Implementación Wordpress</span></li>
                                         <li class='has'><span class='text-muted'>1GB de almacenamiento</span></li>
                                         <li class='has'><span class='text-muted'>Base de datos</span></li>
-                                        <li class='hasnt'><span class='text-muted'>Panel de administración</span></li>
+                                        <li class='has'><span class='text-muted'>Panel de administración</span></li>
                                         <li class='hasnt'><span class='text-muted'>5 correos de 500 MB</span></li>
                                     </ul>
 
@@ -210,10 +210,10 @@
 
                                 <h3 class='headin'>MySQL Profesional</h3>
                                 <p class='price'>
-                                    <strong>USD 12</strong><span class='text-muted spani'>/mensual</span>
+                                    <strong>USD 5</strong><span class='text-muted spani'>/mensual</span>
                                 </p>
                                 <p class='factura text-muted'>
-                                    <strong>USD 100</strong> por facturación anual
+                                    <strong>USD 50</strong> por facturación anual
                                 </p>
 
                                 <div class='caracteristicasB'>
@@ -390,7 +390,7 @@
 
                                 <h3 class='headin'>Regional (.com.ve)</h3>
                                 <p class='price'>
-                                    <strong>USD 1</strong><span class='text-muted spani'>/anual</span>
+                                    <strong>USD 15</strong><span class='text-muted spani'>/anual</span>
                                 </p>
                                 <p class='factura text-muted'>
                                     Sólo válido para clientes de nuestro servicio de hosting.
@@ -513,18 +513,6 @@
 
     </div>
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5e9dd34a35bcbb0c9ab2f968/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
+
 
 @endsection
