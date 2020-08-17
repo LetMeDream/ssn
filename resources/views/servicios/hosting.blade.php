@@ -16,7 +16,7 @@
 
                 </div>
 
-
+                <message-form></message-form>
 
                     <h4 class='service'> Consigue el plan que se ajusta a las necesidades de tu proyecto. </h4>
 
