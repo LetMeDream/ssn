@@ -1,5 +1,6 @@
 <link href='/css/hosting.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 @extends('layouts.new')
 
@@ -8,8 +9,13 @@
     <div class='container-fluid'>
 
 
+                <div class="barra">
+                    <a href='/'><img class='ssn' src='/css/img/ssn.png' width="60"></a>
 
-                <a href='/'><img class='ssn' src='/css/img/ssn.png' width="60"></a>
+                    <a class='ingreso' href="https://ssn.com.ve:8443/">Ingresar al servidor</a>
+
+                </div>
+
 
 
                     <h4 class='service'> Consigue el plan que se ajusta a las necesidades de tu proyecto. </h4>

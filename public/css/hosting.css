@@ -216,6 +216,34 @@ li.hasnt {
     border-radius: 10px !important;
 }
 
+/* Flexie nav bar */
+.barra{
+    display:flex;
+    padding: 4px 8px;
+    font-family: 'Roboto', sans-serif;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.barra .ingreso{
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
