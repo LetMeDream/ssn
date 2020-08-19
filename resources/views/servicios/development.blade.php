@@ -1,5 +1,8 @@
 <link href='/css/development.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+{{-- Meta data, for the cors on VUE --}}
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
 
 @extends('layouts.new')
 
@@ -8,7 +11,7 @@
     <div class='container-fluid'>
 
             {{-- Vue component; Message Box --}}
-            <message-form></message-form>
+            <message-form content='{{csrf_token()}}' url='{{ Route('messages.store') }}'  ></message-form>
             {{-- Vue component; Message Box. END --}}
 
             <div class="nav">
