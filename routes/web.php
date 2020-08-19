@@ -60,3 +60,9 @@ Route::post('diseño', 'DiseñoController@store')->name('design.store');
 /** Marketing */
 Route::get('marketing', 'MarketingController@marketing');
 Route::post('marketing', 'MarketingController@store')->name('marketing.store');
+
+/* Long time no see */
+/* Creating the message routes */
+Route::resource('messages', 'MessageController')->only([
+    'store'
+]);
