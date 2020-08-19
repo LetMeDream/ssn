@@ -11,9 +11,9 @@
             <div class="formWrapper" v-if='opened'>
 
                 <div class="head">
-                    <div class="status">Desconectado</div>
-                    <div class="msg text-light">
-                        Rellene el formulario a continuación y le contestaremos lo antes posible.
+                    <div class="status text-center">Contáctanos</div>
+                    <div class="msg lead">
+                        Rellena el formulario a continuación y te contestaremos lo antes posible.
                     </div>
                 </div>
                 <div class="body">
@@ -162,15 +162,18 @@
         methods: {
 
             open: function(){
-                let button = document.getElementById('popBtn2');
+                let abrir = document.getElementById('popBtn');
+                let cerrar = document.getElementById('popBtn2');
 
                 /* Change it's background image to reflex it's opened */
 
                 if (!this.opened){
-                    button.style.zIndex = "40";
+                    cerrar.style.opacity = ".8";
+                    abrir.style.opacity = '0';
 
                 } else{
-                    button.style.zIndex = "0";
+                    cerrar.style.opacity = "0";
+                    abrir.style.opacity = '.8';
                 }
 
                 this.opened = !this.opened;
@@ -196,7 +199,7 @@
                 axios.post(this.url,this.myJson)
                 .then(res  => {
                     console.log(res);
-                    this.$toast.show('¡Mensaje enviado!', 'Éxito', this.notificationSystem.options.success);
+                    this.$toast.info('¡Mensaje enviado!', 'Éxito', this.notificationSystem.options.success);
                 })
                 .catch(err => {
                     this.$toast.error('Algo salió mal', 'Error', this.notificationSystem.options.success);
@@ -235,23 +238,22 @@
         cursor: pointer;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: #FC57B1;
+        background-color: rgba(255, 132, 1,.8);
         filter: invert(100%);
         box-shadow: 18px 21px 5px 0px rgba(0,0,0,0.75);
+
     }
 
     .chatBtn{
         background-image: url('../../../public/css/img/chat.png');
         background-size:50% 50%;
-
-        z-index: 10;
+        opacity:1;
     }
 
     .chatBtnClose{
         background-image: url('../../../public/css/img/close2.png');
         background-size:40% 40%;
-
-        z-index: 0;
+        opacity:0;
     }
 
     /* Now, the form itself */
@@ -273,11 +275,11 @@
         display: grid;
 
         grid-template-columns: 1fr;
-        grid-template-rows: 122px auto;
+        grid-template-rows: 100px auto;
     }
     .head{
         /* background-color: #FC57B1; */
-        background-color: #03A84E;
+        background-color: rgba(0, 123, 255,.8);
         font-family: 'Roboto', sans-serif;
         padding: 0 10px;
         border-radius: 6px 6px 0px 0px;
@@ -291,7 +293,7 @@
         width:90%;
         text-align: center;
         margin-left:5%;
-        margin-top:34px;
+        margin-top:14px;
         font-size:13px;
         font-weight: 100;
     }
@@ -342,12 +344,12 @@
 
         /* make sure colors have enough contrast! */
         color: #ffffff;
-        background-color: #03A84E;
+        background-color: rgba(0, 123, 255,.8);
 
         transition: .6s;
     }
     .newBtn:not(:disabled):hover{
-        color:#03A84E;
+        color:rgba(0, 123, 255,.8);
         border-color: currentColor;
         background-color: white;
     }

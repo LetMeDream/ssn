@@ -2082,13 +2082,16 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     open: function open() {
-      var button = document.getElementById('popBtn2');
+      var abrir = document.getElementById('popBtn');
+      var cerrar = document.getElementById('popBtn2');
       /* Change it's background image to reflex it's opened */
 
       if (!this.opened) {
-        button.style.zIndex = "40";
+        cerrar.style.opacity = ".8";
+        abrir.style.opacity = '0';
       } else {
-        button.style.zIndex = "0";
+        cerrar.style.opacity = "0";
+        abrir.style.opacity = '.8';
       }
 
       this.opened = !this.opened;
@@ -2115,7 +2118,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.post(this.url, this.myJson).then(function (res) {
         console.log(res);
 
-        _this.$toast.show('¡Mensaje enviado!', 'Éxito', _this.notificationSystem.options.success);
+        _this.$toast.info('¡Mensaje enviado!', 'Éxito', _this.notificationSystem.options.success);
       })["catch"](function (err) {
         _this.$toast.error('Algo salió mal', 'Error', _this.notificationSystem.options.success);
       });
@@ -6695,7 +6698,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.el{\n    z-index:100;\n}\n/* Two buttons, because of problems getting img's urls right back from Laravel */\n.chatBtn, .chatBtnClose{\n    position:fixed;\n    bottom: 20px;\n    right: 20px;\n    border-radius: 100%;\n    height: 60px;\n    width: 60px;\n    cursor: pointer;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-color: #FC57B1;\n    -webkit-filter: invert(100%);\n            filter: invert(100%);\n    box-shadow: 18px 21px 5px 0px rgba(0,0,0,0.75);\n}\n.chatBtn{\n    background-image: url(" + escape(__webpack_require__(/*! ../../../public/css/img/chat.png */ "./public/css/img/chat.png")) + ");\n    background-size:50% 50%;\n\n    z-index: 10;\n}\n.chatBtnClose{\n    background-image: url(" + escape(__webpack_require__(/*! ../../../public/css/img/close2.png */ "./public/css/img/close2.png")) + ");\n    background-size:40% 40%;\n\n    z-index: 0;\n}\n\n/* Now, the form itself */\n.formWrapper{\n\n    position:fixed;\n    bottom: 90px;\n    right: 10px;\n\n    z-index: 100;\n    height: 440px;\n    width:340px;\n    max-width:90%;\n    border-radius: 7.5px;\n    border: .01px solid rgba(128, 128, 128,.4);\n\n    /* Lets try to set it up with grids */\n\n    display: grid;\n\n    grid-template-columns: 1fr;\n    grid-template-rows: 122px auto;\n}\n.head{\n    /* background-color: #FC57B1; */\n    background-color: #03A84E;\n    font-family: 'Roboto', sans-serif;\n    padding: 0 10px;\n    border-radius: 6px 6px 0px 0px;\n}\n.head .status{\n    color:white;\n    margin-top: 10px;\n}\n.head .msg{\n    color:white;\n    width:90%;\n    text-align: center;\n    margin-left:5%;\n    margin-top:34px;\n    font-size:13px;\n    font-weight: 100;\n}\n.body{\n    /* border: 1px solid blue; */\n    background-color: white;\n    border-radius: 0 0 7px 7px;\n\n    display:-webkit-box;\n\n    display:flex;\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n}\n.body .formulario{\n    width:90%;\n    height:80%;\n    border: 1px solid rgba(0, 0, 0,.1);\n    border-radius: 1px;\n}\n.formulario{\n\n    display:-webkit-box;\n\n    display:flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n            flex-direction: column;\n\n    justify-content: space-around;\n    -webkit-box-align: center;\n            align-items: center;\n}\n.formulario .item{\n    width:80%;\n}\ntextarea.item{\n    height: 100px;\n}\n\n/* Styling button */\n.newBtn{\n    /* create a small space when buttons wrap on 2 lines */\n    margin: 2px 0;\n\n    /* invisible border (will be colored on hover/focus) */\n    border: solid 1px transparent;\n    border-radius: 3px;\n\n    /* size comes from text & padding (no width/height) */\n    padding: 0.5em 1em;\n\n    /* make sure colors have enough contrast! */\n    color: #ffffff;\n    background-color: #03A84E;\n\n    -webkit-transition: .6s;\n\n    transition: .6s;\n}\n.newBtn:not(:disabled):hover{\n    color:#03A84E;\n    border-color: currentColor;\n    background-color: white;\n}\n.newBtn:active {\n    -webkit-transform: translateY(1px);\n            transform: translateY(1px);\n    -webkit-filter: saturate(150%);\n            filter: saturate(150%);\n}\n.opened-enter-active, .opened-leave-active {\n-webkit-transition: opacity .5s;\ntransition: opacity .5s;\n}\n.opened-enter, .opened-leave-to /* .fade-leave-active below version 2.1.8 */ {\nopacity: 0;\n}\n\n\n", ""]);
+exports.push([module.i, "\n.el{\n    z-index:100;\n}\n/* Two buttons, because of problems getting img's urls right back from Laravel */\n.chatBtn, .chatBtnClose{\n    position:fixed;\n    bottom: 20px;\n    right: 20px;\n    border-radius: 100%;\n    height: 60px;\n    width: 60px;\n    cursor: pointer;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-color: rgba(255, 132, 1,.8);\n    -webkit-filter: invert(100%);\n            filter: invert(100%);\n    box-shadow: 18px 21px 5px 0px rgba(0,0,0,0.75);\n}\n.chatBtn{\n    background-image: url(" + escape(__webpack_require__(/*! ../../../public/css/img/chat.png */ "./public/css/img/chat.png")) + ");\n    background-size:50% 50%;\n    opacity:1;\n}\n.chatBtnClose{\n    background-image: url(" + escape(__webpack_require__(/*! ../../../public/css/img/close2.png */ "./public/css/img/close2.png")) + ");\n    background-size:40% 40%;\n    opacity:0;\n}\n\n/* Now, the form itself */\n.formWrapper{\n\n    position:fixed;\n    bottom: 90px;\n    right: 10px;\n\n    z-index: 100;\n    height: 440px;\n    width:340px;\n    max-width:90%;\n    border-radius: 7.5px;\n    border: .01px solid rgba(128, 128, 128,.4);\n\n    /* Lets try to set it up with grids */\n\n    display: grid;\n\n    grid-template-columns: 1fr;\n    grid-template-rows: 100px auto;\n}\n.head{\n    /* background-color: #FC57B1; */\n    background-color: rgba(0, 123, 255,.8);\n    font-family: 'Roboto', sans-serif;\n    padding: 0 10px;\n    border-radius: 6px 6px 0px 0px;\n}\n.head .status{\n    color:white;\n    margin-top: 10px;\n}\n.head .msg{\n    color:white;\n    width:90%;\n    text-align: center;\n    margin-left:5%;\n    margin-top:14px;\n    font-size:13px;\n    font-weight: 100;\n}\n.body{\n    /* border: 1px solid blue; */\n    background-color: white;\n    border-radius: 0 0 7px 7px;\n\n    display:-webkit-box;\n\n    display:flex;\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n}\n.body .formulario{\n    width:90%;\n    height:80%;\n    border: 1px solid rgba(0, 0, 0,.1);\n    border-radius: 1px;\n}\n.formulario{\n\n    display:-webkit-box;\n\n    display:flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n            flex-direction: column;\n\n    justify-content: space-around;\n    -webkit-box-align: center;\n            align-items: center;\n}\n.formulario .item{\n    width:80%;\n}\ntextarea.item{\n    height: 100px;\n}\n\n/* Styling button */\n.newBtn{\n    /* create a small space when buttons wrap on 2 lines */\n    margin: 2px 0;\n\n    /* invisible border (will be colored on hover/focus) */\n    border: solid 1px transparent;\n    border-radius: 3px;\n\n    /* size comes from text & padding (no width/height) */\n    padding: 0.5em 1em;\n\n    /* make sure colors have enough contrast! */\n    color: #ffffff;\n    background-color: rgba(0, 123, 255,.8);\n\n    -webkit-transition: .6s;\n\n    transition: .6s;\n}\n.newBtn:not(:disabled):hover{\n    color:rgba(0, 123, 255,.8);\n    border-color: currentColor;\n    background-color: white;\n}\n.newBtn:active {\n    -webkit-transform: translateY(1px);\n            transform: translateY(1px);\n    -webkit-filter: saturate(150%);\n            filter: saturate(150%);\n}\n.opened-enter-active, .opened-leave-active {\n-webkit-transition: opacity .5s;\ntransition: opacity .5s;\n}\n.opened-enter, .opened-leave-to /* .fade-leave-active below version 2.1.8 */ {\nopacity: 0;\n}\n\n\n", ""]);
 
 // exports
 
@@ -38635,11 +38638,13 @@ var render = function() {
         _vm.opened
           ? _c("div", { staticClass: "formWrapper" }, [
               _c("div", { staticClass: "head" }, [
-                _c("div", { staticClass: "status" }, [_vm._v("Desconectado")]),
+                _c("div", { staticClass: "status text-center" }, [
+                  _vm._v("Contáctanos")
+                ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "msg text-light" }, [
+                _c("div", { staticClass: "msg lead" }, [
                   _vm._v(
-                    "\n                    Rellene el formulario a continuación y le contestaremos lo antes posible.\n                "
+                    "\n                    Rellena el formulario a continuación y te contestaremos lo antes posible.\n                "
                   )
                 ])
               ]),
