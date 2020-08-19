@@ -104,7 +104,7 @@
                                 position: "bottomLeft"
                             },
                             success: {
-                                position: "bottomCenter"
+                                position: "bottomLeft"
                             },
                             warning: {
                                 position: "topLeft"
@@ -196,7 +196,7 @@
                 axios.post(this.url,this.myJson)
                 .then(res  => {
                     console.log(res);
-                    this.$toast.success('¡Mensaje enviado!', 'Éxito', this.notificationSystem.options.success);
+                    this.$toast.show('¡Mensaje enviado!', 'Éxito', this.notificationSystem.options.success);
                 })
                 .catch(err => {
                     this.$toast.error('Algo salió mal', 'Error', this.notificationSystem.options.success);

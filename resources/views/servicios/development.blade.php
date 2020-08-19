@@ -194,7 +194,7 @@
 
                             <div class='caracteristicas'>
 
-                                <p class='caractDev text-muted'>Aplica para contratos de más de 20 horas al mes</p>
+                                <p class='caractDev text-muted pr-2'>Aplica para contratos de más de<br>20 horas al mes</p>
 
                             </div>
 

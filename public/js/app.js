@@ -2032,7 +2032,7 @@ __webpack_require__.r(__webpack_exports__);
             position: "bottomLeft"
           },
           success: {
-            position: "bottomCenter"
+            position: "bottomLeft"
           },
           warning: {
             position: "topLeft"
@@ -2115,7 +2115,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.post(this.url, this.myJson).then(function (res) {
         console.log(res);
 
-        _this.$toast.success('¡Mensaje enviado!', 'Éxito', _this.notificationSystem.options.success);
+        _this.$toast.show('¡Mensaje enviado!', 'Éxito', _this.notificationSystem.options.success);
       })["catch"](function (err) {
         _this.$toast.error('Algo salió mal', 'Error', _this.notificationSystem.options.success);
       });
