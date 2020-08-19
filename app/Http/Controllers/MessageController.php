@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Message;
+use App\Mail\MessageFormMail;
+
+/* We need mail facade */
+use Illuminate\Support\Facades\Mail;
 
 class MessageController extends Controller
 {
@@ -38,7 +42,6 @@ class MessageController extends Controller
         //
         if( request()->expectsJson() ){
 
-
             $message = new Message;
             $message->create([
                 'name' => $request->name,
@@ -46,10 +49,16 @@ class MessageController extends Controller
                 'message' => $request->message
             ]);
 
+            /* Then send an email */
+            Mail::to('raulalfonzo66@gmail.com')->send(new MessageFormMail($request) );
+
+
             return response()->json([
                 /* el json (myJson) llega en forma de $request */
                 'abandonHope' => $request->message,
             ]);
+
+
 
         }
 
