@@ -21,6 +21,12 @@ body,html{
     height: 1060px;
     position:relative;
 }
+.caract{
+    display:flex;
+}
+.caract strong {
+    margin-left: 10px;
+}
 .hi{
     padding-top:30px;
     text-align:center;
@@ -146,10 +152,23 @@ textarea{
 .spani{
     font-size: 12px;
 }
+
 .caracteristicas{
     position:relative;
     top:130px;
     left:0px;
+}
+.caracteristicasX{
+    position:relative;
+    top:130px;
+    left:0px;
+    display:flex;
+    justify-content: center;
+    align-items:center}
+.caractDev{
+    font-size: 12px;
+    width:90%;
+    display:flex;
 }
 /** Li custom bullets */
 li.has {

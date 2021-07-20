@@ -161,7 +161,7 @@
                                     <strong>USD 10</strong><span class='text-muted spani'>/por hora </span>
                                 </p>
 
-                                <div class='caracteristicas'>
+                                <div class='caracteristicasX'>
 
                                     <p class='caractDev text-muted'>Aplica para contratos de menos de 20 horas al mes</p>
 
@@ -184,7 +184,7 @@
                                     <strong>USD 7</strong><span class='text-muted spani'>/por hora </span>
                                 </p>
 
-                                <div class='caracteristicas'>
+                                <div class='caracteristicasX'>
 
                                     <p class='caractDev text-muted'>Aplica para contratos de más de 20 horas al mes</p>
 
@@ -207,7 +207,7 @@
                                     <strong>USD 10</strong><span class='text-muted spani'>/por hora </span>
                                 </p>
 
-                                <div class='caracteristicas'>
+                                <div class='caracteristicasX'>
 
                                     <p class='caractDev text-muted'>Aplica para contratos de menos de 20 horas al mes</p>
 
@@ -230,7 +230,7 @@
                                     <strong>USD 7</strong><span class='text-muted spani'>/por hora </span>
                                 </p>
 
-                                <div class='caracteristicas'>
+                                <div class='caracteristicasX'>
 
                                     <p class='caractDev text-muted'>Aplica para contratos de más de 20 horas al mes</p>
 
