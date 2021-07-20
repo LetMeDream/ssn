@@ -166,7 +166,7 @@ textarea{
     justify-content: center;
     align-items:center}
 .caractDev{
-    font-size: 12px;
+    font-size: 1rem;
     width:90%;
     display:flex;
 }
