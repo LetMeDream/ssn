@@ -149,7 +149,7 @@ textarea{
 .caracteristicas{
     position:relative;
     top:130px;
-    left:12px;
+    left:0px;
 }
 /** Li custom bullets */
 li.has {
